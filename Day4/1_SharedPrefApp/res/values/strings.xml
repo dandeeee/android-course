@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SharedPref</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="times_application_started">The App was started:</string>
+    <string name="times">times</string>
+    <string name="preference_file_key">pref_file_key</string>
+    
+</resources>
