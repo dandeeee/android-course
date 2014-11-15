@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ListPreference
+            android:key="GOES_FIRST_PREFERENCE"
+            android:title="Who goes first"
+            android:summary="Human"
+            android:defaultValue="Alternate"
+            android:entries="@array/list_goes_first"
+            android:entryValues="@array/list_goes_first"/>
+
+    <CheckBoxPreference
+            android:key="SOUND_PREFERENCE"
+            android:title="Sound"
+            android:defaultValue="true"
+            android:summary="Turn the sound on or off"/>
+
+    <EditTextPreference
+            android:key="VICTORY_MESSAGE_PREFERENCE"
+            android:summary=""
+            android:defaultValue="@string/result_human_wins"
+            android:title="Victory message"/>
+
+    <ListPreference
+            android:key="DIFFICULTY_PREFERENCE"
+            android:title="Difficulty level"
+            android:summary=""
+            android:defaultValue="@string/difficulty_expert"
+            android:entries="@array/list_difficulty_level"
+            android:entryValues="@array/list_difficulty_level"/>
+
+    <Preference
+            android:key="BOARD_COLOR_PREFERENCE"
+            android:title="Board color"
+            android:summary="Set the board's color"/>
+
+
+</PreferenceScreen>
