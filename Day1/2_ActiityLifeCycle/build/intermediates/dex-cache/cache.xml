@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Volumes/home/dandeeee/_frameworks/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="/Volumes/home/dandeeee/Dropbox/bsu/class/_ANDROID/android-course/Day1/2_ActiityLifeCycle/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.0-912ed354a70c8c3a24f51c2d22b97c5a74aedc74.jar" />
+    </item>
+    <item
+        jar="/Volumes/home/dandeeee/Dropbox/bsu/class/_ANDROID/android-course/Day1/2_ActiityLifeCycle/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="/Volumes/home/dandeeee/Dropbox/bsu/class/_ANDROID/android-course/Day1/2_ActiityLifeCycle/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-be8d583a2c856cc60906ccd03691f2ed89951c2a.jar" />
+    </item>
+    <item
+        jar="/Volumes/home/dandeeee/Dropbox/bsu/class/_ANDROID/android-course/Day1/2_ActiityLifeCycle/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/Volumes/home/dandeeee/Dropbox/bsu/class/_ANDROID/android-course/Day1/2_ActiityLifeCycle/app/build/intermediates/pre-dexed/debug/classes-f64cd780c3487c64bdc793a5ba9ba0d64fb10292.jar" />
+    </item>
+
+</items>
