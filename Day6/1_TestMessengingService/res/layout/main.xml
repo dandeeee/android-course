@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Service" />
+
+    <Button
+        android:id="@+id/buttonDownloadImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Download Image" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Service" />
+    
+    <ImageView
+        android:src="@drawable/ic_launcher"
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+        
+    
+
+</LinearLayout>

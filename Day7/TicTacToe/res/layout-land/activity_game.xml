@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+    <com.dandeeee.tictactoe.ui.component.BoardView
+            android:id="@+id/board"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            />
+
+    <TextView android:id="@+id/information"
+              android:layout_width="fill_parent"
+              android:layout_toRightOf="@id/board"
+              android:layout_height="wrap_content"
+              android:text="information"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="20dp"
+              android:textSize="20dp"/>
+
+    <TextView android:id="@+id/player_score_label"
+              android:text="@string/score_label_human"
+              android:gravity="center_horizontal"
+              android:layout_marginLeft="20dp"
+              android:textSize="20dp"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_below="@id/information"
+              android:layout_toRightOf="@id/board"
+              android:layout_marginTop="20dp"
+            />
+
+    <TextView android:id="@+id/player_score"
+              android:textStyle="bold"
+              android:text="0"
+              android:layout_marginTop="20dp"
+              android:textSize="20dp"
+              android:layout_below="@id/information"
+              android:layout_toRightOf="@id/player_score_label"
+              android:layout_height="wrap_content"
+              android:layout_width="fill_parent"
+              android:gravity="right"
+              android:layout_marginRight="10dp"/>
+
+    <TextView android:id="@+id/tie_score_label"
+              android:text="@string/score_label_tie"
+              android:textSize="20dp"
+              android:layout_marginLeft="20dp"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:gravity="center_horizontal"
+              android:layout_toRightOf="@id/board"
+              android:layout_below="@id/player_score_label"/>
+
+    <TextView android:id="@+id/tie_score"
+              android:textStyle="bold"
+              android:text="0"
+              android:layout_height="wrap_content"
+              android:textSize="20dp"
+              android:layout_below="@id/player_score_label"
+              android:layout_toRightOf="@id/tie_score_label"
+              android:layout_marginRight="10dp"
+              android:layout_width="fill_parent"
+              android:gravity="right"/>
+
+    <TextView android:id="@+id/computer_score_label"
+              android:text="@string/score_label_computer"
+              android:layout_marginLeft="20dp"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:textSize="20dp"
+              android:gravity="right"
+              android:layout_toRightOf="@id/board"
+              android:layout_below="@id/tie_score_label"
+            />
+
+    <TextView android:id="@+id/computer_score"
+              android:textStyle="bold"
+              android:layout_height="wrap_content"
+              android:text="0"
+              android:textSize="20dp"
+              android:gravity="right"
+              android:layout_below="@id/tie_score_label"
+              android:layout_toRightOf="@id/computer_score_label"
+              android:layout_marginRight="10dp"
+              android:layout_width="fill_parent"/>
+
+</RelativeLayout>
