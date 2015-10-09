@@ -24,7 +24,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	private EditText editName;
 	private EditText editAddress;
 
-	ArrayList<Person> array;
+	ArrayList<Person> personsArray;
 	private ArrayAdapter<Person> adapter;
 
 	private MySqliteHelper DBhelper;
@@ -48,8 +48,8 @@ public class MainActivity extends Activity implements OnClickListener {
         editName = (EditText)  findViewById(R.id.editName);
         editAddress = (EditText)  findViewById(R.id.editAddress);
         
-        array = new ArrayList<Person>();
-        adapter = new ArrayAdapter<Person>(this, android.R.layout.simple_list_item_1, array);
+        personsArray = new ArrayList<Person>();
+        adapter = new ArrayAdapter<Person>(this, android.R.layout.simple_list_item_1, personsArray);
         listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(adapter);
     }
@@ -62,7 +62,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			values.put(DBShema.COLUMN_NAME, editName.getText().toString());
 			values.put(DBShema.COLUMN_ADDRESS, editAddress.getText().toString());
 //			values.put(DBShema.COLUMN_AGE, 56);
-			
+
 			// insert into persons
 			db.insert(DBShema.TABLE_PERSONS, null, values);
 			
@@ -71,7 +71,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		} else if (v.getId() == R.id.buttonQuery) {
 			// select personId, personName, personAddress, personAge from persons;
 			
-			array.clear();
+			personsArray.clear();
 			
 			String columns[] = new String[] {
 					DBShema.COLUMN_PERSON_ID,
@@ -93,7 +93,7 @@ public class MainActivity extends Activity implements OnClickListener {
 					p.address = cursor.getString(cursor.getColumnIndex(DBShema.COLUMN_ADDRESS));
 					p.personAge = cursor.getInt(cursor.getColumnIndex(DBShema.COLUMN_AGE));
 
-					array.add(p);
+					personsArray.add(p);
 
 //					Log.e("Person info", String.format("Id:%d, Name:%s, Address:%s, Age:%d", personId, personName, personAddress, personAge));
 					cursor.moveToNext();
