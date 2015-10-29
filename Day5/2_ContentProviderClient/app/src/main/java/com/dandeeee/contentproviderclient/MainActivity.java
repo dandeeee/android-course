@@ -9,11 +9,16 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.dandeeee.contentproviderclient.model.MyCar;
+
 import static com.dandeeee.contentproviderclient.Contstants.*;
 
 public class MainActivity extends Activity implements OnClickListener {
+
 	private Button buttonInsert;
 	private Button buttonQuery;
+	ContentResolver resolver;
 
 	@Override
     public void onCreate(Bundle savedInstanceState) {
@@ -25,7 +30,9 @@ public class MainActivity extends Activity implements OnClickListener {
         
         buttonQuery = (Button) findViewById(R.id.buttonQuery);
         buttonQuery.setOnClickListener(this);
-        
+
+		resolver = getContentResolver();
+
     }
 
 	@Override
@@ -38,13 +45,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	}
 	
 	private void insertNewRecord() {
-		MyCar myCar = new MyCar();
-		myCar.name = "A5";
-        myCar.company = "Audi";
-        myCar.color = "Red";
-        myCar.price = 10000000f;
-        
-        ContentResolver resolver = getContentResolver();
+		MyCar myCar = MyCar.getDummyInstance();
         
         ContentValues values = new ContentValues();
         values.put(COLUMN_NAME, myCar.name);
@@ -52,8 +53,6 @@ public class MainActivity extends Activity implements OnClickListener {
         values.put(COLUMN_COLOR, myCar.color);
         values.put(COLUMN_PRICE, myCar.price);
         
-        // MyCarConentProvider
-        // CP.insert(..);
         resolver.insert(CONTENT_URI, values);
 	}
 
@@ -76,7 +75,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				myCar.color = cursor.getString(cursor.getColumnIndex(COLUMN_COLOR));
 				myCar.price = cursor.getFloat(cursor.getColumnIndex(COLUMN_PRICE));
 				
-				sb.append("MyCarDetails"+myCar.toString()).append("\n");
+				sb.append("MyCarDetails" + myCar.toString()).append("\n");
 				
 				cursor.moveToNext();
 			}
