@@ -123,7 +123,7 @@ public class ServiceConnector {
          */
         Log.e(LOGTAG, "Binding service");
 
-        Intent i = new Intent("com.example.simplemessagingservice.ACTION_BIND");
+        Intent i = new Intent(mCtx, MessengerService.class);
 
         Boolean flag = mCtx.getApplicationContext().bindService(i, mConnection, Context.BIND_AUTO_CREATE);
 
