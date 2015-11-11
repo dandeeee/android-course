@@ -39,11 +39,6 @@ public class MainActivity extends Activity  implements OnClickListener {
         buttonCall.setOnClickListener(this);
 
         serviceConnection = new ServiceConnection() {
-            @Override
-            public void onServiceDisconnected(ComponentName name) {
-                Log.d(LOG_TAG, "onServiceDisconnected");
-                myservice = null;
-            }
 
             @Override
             public void onServiceConnected(ComponentName name, IBinder serviceBinder) {
@@ -53,6 +48,13 @@ public class MainActivity extends Activity  implements OnClickListener {
                 myservice = myBinder.getInstance();
 
             }
+
+            @Override
+            public void onServiceDisconnected(ComponentName name) {
+                Log.d(LOG_TAG, "onServiceDisconnected");
+                myservice = null;
+            }
+
         };
     }
 

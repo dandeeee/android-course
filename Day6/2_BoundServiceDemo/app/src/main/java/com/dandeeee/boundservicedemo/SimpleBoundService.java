@@ -34,7 +34,13 @@ public class SimpleBoundService extends Service {
 		super.onCreate();
 		Log.e(LOG_TAG, "onCreate()");
 	}
-	
+
+	@Override
+	public void onDestroy() {
+		super.onDestroy();
+		Log.e(LOG_TAG, "onDestroy()");
+	}
+
 	@Override
 	public IBinder onBind(Intent arg0) {
 		Log.e(LOG_TAG, "onBind()");
@@ -42,12 +48,6 @@ public class SimpleBoundService extends Service {
 		return binder;
 	}
 
-	@Override
-	public void onDestroy() {
-		super.onDestroy();
-		Log.e(LOG_TAG, "onDestroy()");
-	}
-	
 	@Override
 	public boolean onUnbind(Intent intent) {
 		Log.e(LOG_TAG, "onUnbind()");
