@@ -6,21 +6,38 @@
 
     <Button
         android:id="@+id/btnStart"
-        android:text="StartService"
+        android:text="StartServices"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/btnSay"
-        android:text="Say"
+        android:id="@+id/btnSaySimple"
+        android:text="Say Hi Simple"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:id="@+id/btnSayDownload"
+        android:text="Say Hi Download"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnDoDownload"
+        android:text="Do Downloading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/btnStop"
-        android:text="StopService"
+        android:text="StopServices"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@drawable/ic_launcher"
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
 
 </LinearLayout>
