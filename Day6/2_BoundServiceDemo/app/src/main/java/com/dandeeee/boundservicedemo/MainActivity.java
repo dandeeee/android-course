@@ -44,7 +44,7 @@ public class MainActivity extends Activity  implements OnClickListener {
             public void onServiceConnected(ComponentName name, IBinder serviceBinder) {
                 Log.d(LOG_TAG, "onServiceConnected");
 
-                MyBinder myBinder = (MyBinder) serviceBinder;
+                SimpleBoundService.MyBinder myBinder = (SimpleBoundService.MyBinder) serviceBinder;
                 myservice = myBinder.getInstance();
 
             }
