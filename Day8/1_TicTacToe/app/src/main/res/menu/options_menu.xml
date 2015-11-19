@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/new_game"
+          android:title="New Game"
+          android:icon="@drawable/new_game" />
+
+    <item android:id="@+id/settings"
+          android:title="Settings"
+          android:icon="@drawable/menu_settings" />
+
+    <item android:id="@+id/reset_scores"
+          android:title="Reset Scores"
+          android:icon="@drawable/reset" />
+
+    <item android:id="@+id/about"
+          android:title="About"
+          android:icon="@drawable/tictactoe_menu" />
+
+    <item android:id="@+id/quit"
+        android:title="Quit"
+        android:icon="@drawable/tictactoe_menu" />
+</menu>
