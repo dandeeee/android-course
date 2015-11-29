@@ -48,6 +48,7 @@ Normally, several apps are considered durring one class. Naming them with number
 2. http://developer.android.com/training/best-ui.html
 
 ##### Day 10: NDK
+https://github.com/googlesamples/android-ndk/tree/android-mk
 
 ##### Day 11: Hybrid mobile Appd with Apache Cordova
 
