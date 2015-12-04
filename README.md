@@ -49,7 +49,10 @@ Normally, several apps are considered durring one class. Naming them with number
 3. Pseudo Master-Detail app via Fragments
 
 ##### Day 10: NDK
-https://github.com/googlesamples/android-ndk/tree/android-mk
+1. Simple JNI demo
+2. Custom JNI OpenGL view as a BitMap demo
+3. Custom OpenGL view demo
+4. Open GL game 'Tunnel'
 
 ##### Day 11: Hybrid mobile Appd with Apache Cordova
 
