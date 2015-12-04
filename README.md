@@ -43,9 +43,10 @@ Normally, several apps are considered durring one class. Naming them with number
 ##### Day 8: Demo of a Game App "_TicTacToe_"
 1. TicTacToe
 
-##### Day 9: Building UI, Fragments, Components
-1. http://developer.android.com/training/basics/fragments/index.html
-2. http://developer.android.com/training/best-ui.html
+##### Day 9: Fragments
+1. FragmentLifecycle
+2. Dynamic manipulation over Fragments
+3. Pseudo Master-Detail app via Fragments
 
 ##### Day 10: NDK
 https://github.com/googlesamples/android-ndk/tree/android-mk
