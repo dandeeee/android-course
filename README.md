@@ -53,6 +53,7 @@ Normally, several apps are considered durring one class. Naming them with number
 2. Custom JNI OpenGL view as a BitMap demo
 3. Custom OpenGL view demo
 4. Open GL game 'Tunnel'
+https://github.com/googlesamples/android-ndk/tree/android-mk
 
 ##### Day 11: Hybrid mobile Appd with Apache Cordova
 
